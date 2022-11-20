@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TVShow</title>
+    <link rel="stylesheet" href="{% static 'css/style_for_tv.css' %}">
+</head>
+<body>
+<center>
+    <button><a href="/firma/">О фирме</a></button>
+    <button><a href="/add-shows/">Добавить новый фильм</a></button>
+    <h1 class="h1">Наши фильмы</h1>
+    {% for i in object_list %}
+    <hr>
+    <h2>{{i.title}}</h2>
+    <p>{{i.genre}}</p>
+    <a href="/tvshow_detail/{{i.id}}">Подробнее</a>
+
+    {%endfor%}
+</center>
+
+</body>
+</html>
