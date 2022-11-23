@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'tvshow',
     'fastfood',
     'clothing',
+    'custom_users',
 ]
 
 MIDDLEWARE = [
