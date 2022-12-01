@@ -10,5 +10,6 @@ urlpatterns = [
     path('', include('fastfood.urls')),
     path('', include('clothing.urls')),
     path('', include('custom_users.urls')),
+    path('', include('parser.urls')),
 ]+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)\
     +static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
