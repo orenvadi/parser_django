@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Films List</title>
+  <meta charset="UTF-8">
+  <title>Films List</title>
 </head>
+
 <body>
 
-<center>
+  <center>
     {% for i in object_list %}
 
     <h2><a href="{{i.title}}">Перейти к фильму</a></h2>
     <p>
-        <h2>{{i.title_text}}</h2>
+    <h2>{{i.title_text}}</h2>
     </p>
 
-    <img src="{{i.image.url}}" alt="" width="300" height="250">
+    <img src="{{i.image}}" alt="">
 
 
     {% endfor %}
-</center>
+  </center>
 </body>
+
 </html>
